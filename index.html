@@ -224,7 +224,7 @@
       This Privacy Policy explains how the Walle browser extension processes data when it is used by authorized internal users for recruiting, candidate management, duplicate-checking, workflow assistance, and related productivity tasks.
     </p>
     <div class="meta">
-      <span><b>Effective date:</b> 2026-06-29</span>
+      <span><b>Effective date:</b> 2026-06-30</span>
       <span><b>Publisher:</b> Walle</span>
       <span><b>Contact:</b> <a href="mailto:wallego71@gmail.com">wallego71@gmail.com</a></span>
     </div>
@@ -278,21 +278,26 @@
 
       <section>
         <span class="num">04</span>
-        <h2>Supported sites and browser permissions</h2>
+        <h2>Supported sites, remote services, and browser permissions</h2>
         <p class="sub">
-          Walle requests browser access only for the business systems and page types needed by its features. These may include company CRM systems, authorized recruiting platforms, applicant tracking systems, professional networking or candidate-management pages, and company workflow integrations.
+          Walle requests browser access only for the business systems and page types needed by its single purpose. These may include company CRM systems, authorized recruiting platforms, applicant tracking systems, professional networking or candidate-management pages, and company workflow integrations.
         </p>
         <p>
-          Site support is enabled only to let authorized users perform internal recruiting and CRM tasks. A supported site name or technical permission does not mean Walle owns, endorses, or has independent permission to reuse that site's content. Users remain responsible for using Walle only within their account permissions, employer authorization, applicable platform terms, and applicable law.
+          Site support and host permissions are used only so authorized users can read relevant page context, compare records, prepare workflow data, submit user-requested actions, download user-requested files, and synchronize status with approved business systems. A supported site name or technical permission does not mean Walle owns, endorses, or has independent permission to reuse that site's content. Users remain responsible for using Walle only within their account permissions, employer authorization, applicable platform terms, and applicable law.
+        </p>
+        <p>
+          Walle's executable extension code is packaged with the extension. Walle does not load or execute JavaScript, WebAssembly, or extension logic from remote servers. Walle may communicate with remote business systems, workflow endpoints, or pages that the authorized user is already using. Those remote interactions exchange data, status, configuration, or diagnostics needed to verify session state, retrieve workflow status, perform duplicate checks, submit authorized records, receive quota or task results, and provide support diagnostics. They are limited to the single purpose described in this policy and are not used for advertising, unrelated profiling, or hidden feature delivery.
         </p>
         <ul>
-          <li><span class="pill">storage</span> stores preferences, task state, caches, and settings in the user's browser.</li>
-          <li><span class="pill">tabs</span> and <span class="pill">activeTab</span> identify supported pages and run user-requested workflows on them.</li>
-          <li><span class="pill">scripting</span> enables extension logic on supported pages.</li>
+          <li><span class="pill">host permissions</span> allow Walle to operate only on supported business pages and approved workflow endpoints needed for authorized recruiting and CRM tasks.</li>
+          <li><span class="pill">storage</span> stores preferences, task state, local caches, quota/status data, and settings in the user's browser.</li>
+          <li><span class="pill">tabs</span> identifies supported tab URLs and coordinates background workflows across pages opened by the user. Walle does not use this permission to build unrelated browsing-history profiles.</li>
+          <li><span class="pill">activeTab</span> lets Walle act on the current supported page after a user opens or starts a relevant workflow.</li>
+          <li><span class="pill">scripting</span> runs packaged extension logic on supported pages so the user-requested workflow can read page context, fill fields, or report results.</li>
           <li><span class="pill">cookies</span> checks login/session state and allows supported work-system requests using the user's existing authenticated session when required.</li>
           <li><span class="pill">downloads</span> supports user-requested file, resume, attachment, or export downloads.</li>
-          <li><span class="pill">notifications</span> shows task progress or completion messages.</li>
-          <li><span class="pill">alarms</span> supports scheduled status, quota, or version checks.</li>
+          <li><span class="pill">notifications</span> shows task progress, completion, error, or action-needed messages.</li>
+          <li><span class="pill">alarms</span> supports scheduled status, quota, version, cleanup, or reliability checks.</li>
         </ul>
       </section>
 
@@ -319,6 +324,9 @@
           Walle may store preferences, workflow state, quota state, local duplicate-check cache entries, and task logs in <span class="pill">chrome.storage</span> on the user's device. Local data remains in the browser until it expires, is overwritten, is cleared by the user, or the extension is removed.
         </p>
         <p>
+          Where a workflow requires contact exchange, export preparation, duplicate checking, or task recovery, contact values may be held temporarily in local browser state or in user-requested records. Walle minimizes local contact retention where feasible by masking, hashing, omitting, overwriting, or expiring values that are no longer needed for the active workflow.
+        </p>
+        <p>
           Walle may read cookies only for supported work systems where session status or authorized system requests are required. Walle does not use cookies for cross-site advertising, behavioral advertising, or consumer tracking.
         </p>
       </section>
@@ -341,7 +349,7 @@
           Walle may share data only as needed to provide the internal features described in this policy. Recipients may include company-controlled backend services, CRM or recruiting systems used by the company, cloud hosting providers, and workflow-notification tools such as company-managed webhook integrations.
         </p>
         <p>
-          We do not sell, rent, or trade processed data. Service providers may process data only to provide the relevant service and are expected to protect it through contractual, technical, or organizational controls. Data may also be disclosed where required by applicable law, regulation, court order, or competent authority.
+          We do not sell, rent, or trade processed data. We do not transfer processed data to advertising platforms, data brokers, information resellers, or credit-worthiness services. Service providers may process data only to provide the relevant service and are expected to protect it through contractual, technical, or organizational controls. Human access to user data is limited to user-requested support, security or abuse investigation, legal compliance, or aggregated and anonymized internal operations. Data may also be disclosed where required by applicable law, regulation, court order, or competent authority.
         </p>
       </section>
 
@@ -352,6 +360,7 @@
           <li><strong>Purpose limitation:</strong> Walle is limited to authorized internal recruiting and CRM productivity workflows.</li>
           <li><strong>Data minimization:</strong> Walle should process only the fields needed for the active feature and avoid excessive collection.</li>
           <li><strong>User control:</strong> Most workflows run only when an authorized user opens a supported page or starts a specific action.</li>
+          <li><strong>Limited Use:</strong> Walle's use and transfer of user data is limited to providing or improving the single purpose described in this policy and is intended to comply with the Chrome Web Store User Data Policy, including the Limited Use requirements.</li>
           <li><strong>No circumvention:</strong> Walle should not be used to bypass technical restrictions, obtain data by deception, or access data outside the user's authorization.</li>
           <li><strong>Review and removal:</strong> We will review requests to restrict, correct, delete, or stop processing data where the request is legally or operationally valid.</li>
         </ul>
@@ -387,7 +396,7 @@
 
   <footer>
     Public HTTPS page. No login required.<br>
-    Version: June 29, 2026
+    Version: June 30, 2026
   </footer>
 </div>
 </body>
