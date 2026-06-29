@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walle Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f6f8fa;
+    --paper: #ffffff;
+    --ink: #15202b;
+    --muted: #56616e;
+    --faint: #8a95a1;
+    --accent: #0e6e62;
+    --accent-soft: #e3f0ee;
+    --line: #e5e9ee;
+    --shadow: 0 1px 2px rgba(21, 32, 43, .04), 0 12px 40px rgba(21, 32, 43, .06);
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header {
+    padding: 64px 0 0;
+  }
+
+  .eyebrow {
+    margin: 0 0 14px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0 0 18px;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.12;
+    letter-spacing: 0;
+  }
+
+  .lead {
+    max-width: 70ch;
+    margin: 0 0 28px;
+    color: var(--muted);
+    font-size: 16.5px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    align-items: center;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--line);
+    color: var(--faint);
+    font-family: var(--mono);
+    font-size: 12.5px;
+  }
+
+  .meta b {
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  main {
+    margin: 34px 0 0;
+  }
+
+  .card {
+    padding: 14px 40px 40px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  @media (max-width: 560px) {
+    .card {
+      padding: 8px 22px 30px;
+    }
+  }
+
+  section {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-child {
+    border-bottom: 0;
+  }
+
+  .num {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .05em;
+  }
+
+  h2 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+
+  p {
+    margin: 0 0 12px;
+  }
+
+  p.sub {
+    color: var(--muted);
+  }
+
+  ul {
+    margin: 0 0 12px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 9px;
+    padding-left: 22px;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background: var(--accent);
+  }
+
+  .pill {
+    display: inline-block;
+    margin: 1px 2px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 12px;
+    word-break: break-word;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+
+  a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  .notice {
+    margin: 16px 0 0;
+    padding: 16px 18px;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    background: var(--accent-soft);
+    color: var(--ink);
+  }
+
+  .contact-box {
+    margin-top: 8px;
+    padding: 18px 22px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    font-size: 15px;
+  }
+
+  .contact-box .who {
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+
+  footer {
+    padding: 34px 0 70px;
+    color: var(--faint);
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.9;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Walle Privacy Policy</p>
+    <h1>Privacy Policy</h1>
+    <p class="lead">
+      This Privacy Policy explains how the Walle browser extension processes data when it is used by authorized internal users for recruiting, candidate management, duplicate-checking, workflow assistance, and related productivity tasks.
+    </p>
+    <div class="meta">
+      <span><b>Effective date:</b> 2026-06-29</span>
+      <span><b>Publisher:</b> Walle</span>
+      <span><b>Contact:</b> <a href="mailto:wallego71@gmail.com">wallego71@gmail.com</a></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <section>
+        <span class="num">01</span>
+        <h2>Scope and single purpose</h2>
+        <p>
+          Walle is an internal productivity extension intended only for authorized employees or contractors. Its single purpose is to support work-related recruiting and CRM workflows, including candidate review, duplicate checks, resume or attachment handling, quota/status display, feedback, and related operational records.
+        </p>
+        <p>
+          Walle is not a public web-crawling, scraping, resale, advertising, or data-brokerage service. This policy applies only to the Walle extension and does not apply to third-party websites, recruiting platforms, CRM systems, or cloud services outside Walle.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">02</span>
+        <h2>Authorization and third-party platform boundaries</h2>
+        <p>
+          Users may use Walle only on work platforms, accounts, pages, and records that they are authorized to access in the ordinary course of their duties. Walle does not grant any independent right to copy, collect, export, reuse, or redistribute third-party website content.
+        </p>
+        <ul>
+          <li>Walle should not be used to access, collect, or export data where doing so is prohibited by law, contract, platform terms, website notices, access controls, or the user's employer policies.</li>
+          <li>Walle is not designed to bypass login requirements, paywalls, CAPTCHAs, anti-bot controls, rate limits, or other technical restrictions.</li>
+          <li>Walle should not be used for bulk public crawling, resale of website data, advertising profiling, or any purpose unrelated to authorized internal recruiting and CRM work.</li>
+          <li>If a supported website owner, platform operator, candidate, or employer raises a valid access, privacy, intellectual-property, or data-protection concern, we will review the concern and may restrict, disable, delete, or stop processing the relevant data or site support.</li>
+        </ul>
+        <p class="notice">
+          These safeguards reduce risk but do not replace separate legal permission, platform permission, candidate consent, employment authorization, or professional legal review where required.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">03</span>
+        <h2>Information Walle may process</h2>
+        <p class="sub">Depending on which feature is used, Walle may process the following categories of data from supported work pages and company systems:</p>
+        <ul>
+          <li>Supported-page information, such as the current URL, page state, page identifiers, and visible workflow context.</li>
+          <li>Recruiting and CRM information, such as candidate names, profile URLs, profile identifiers, job titles, employer or education information, resume or attachment information, job or position details, duplicate-check results, CRM IDs, import results, recommendation/submission status, and workflow notes.</li>
+          <li>Contact information only when it is visible to an authorized user, entered by the user, or required for an authorized workflow. Examples may include phone numbers, email addresses, and masked or hashed contact values used for duplicate checking.</li>
+          <li>Operational data, such as task status, quota or usage status, selected workflow options, error messages, diagnostic logs, timestamps, extension version, and feedback submitted by the user.</li>
+          <li>Account/session information needed to provide features, such as login status, company-system user identifiers, user names returned by authorized company systems, and cookies or credentials already present in the browser for supported work systems.</li>
+        </ul>
+        <p>
+          Walle does not intentionally request passwords, payment card data, government identification numbers, biometric data, medical data, or other sensitive personal information unless such data is already included by a third party or by the user in a work record that Walle is instructed to process. Users should not use Walle to collect or upload sensitive data unless they have clear authorization and a lawful business need.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">04</span>
+        <h2>Supported sites and browser permissions</h2>
+        <p class="sub">
+          Walle requests browser access only for the business systems and page types needed by its features. These may include company CRM systems, authorized recruiting platforms, applicant tracking systems, professional networking or candidate-management pages, and company workflow integrations.
+        </p>
+        <p>
+          Site support is enabled only to let authorized users perform internal recruiting and CRM tasks. A supported site name or technical permission does not mean Walle owns, endorses, or has independent permission to reuse that site's content. Users remain responsible for using Walle only within their account permissions, employer authorization, applicable platform terms, and applicable law.
+        </p>
+        <ul>
+          <li><span class="pill">storage</span> stores preferences, task state, caches, and settings in the user's browser.</li>
+          <li><span class="pill">tabs</span> and <span class="pill">activeTab</span> identify supported pages and run user-requested workflows on them.</li>
+          <li><span class="pill">scripting</span> enables extension logic on supported pages.</li>
+          <li><span class="pill">cookies</span> checks login/session state and allows supported work-system requests using the user's existing authenticated session when required.</li>
+          <li><span class="pill">downloads</span> supports user-requested file, resume, attachment, or export downloads.</li>
+          <li><span class="pill">notifications</span> shows task progress or completion messages.</li>
+          <li><span class="pill">alarms</span> supports scheduled status, quota, or version checks.</li>
+        </ul>
+      </section>
+
+      <section>
+        <span class="num">05</span>
+        <h2>How information is used</h2>
+        <p>Walle uses processed information only to provide internal recruiting and CRM productivity features, including:</p>
+        <ul>
+          <li>candidate duplicate checks, CRM lookup, and import workflows;</li>
+          <li>candidate review, resume or attachment handling, and supported submission workflows;</li>
+          <li>job, position, quota, and task status display;</li>
+          <li>internal workflow notifications, feedback, diagnostics, and support;</li>
+          <li>security, abuse prevention, and reliability checks for the extension.</li>
+        </ul>
+        <p>
+          Walle does not sell personal information, does not use processed data for advertising, does not build public data products, and does not profile individuals for purposes unrelated to the authorized work features described in this policy.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">06</span>
+        <h2>Local storage, cookies, and browser data</h2>
+        <p>
+          Walle may store preferences, workflow state, quota state, local duplicate-check cache entries, and task logs in <span class="pill">chrome.storage</span> on the user's device. Local data remains in the browser until it expires, is overwritten, is cleared by the user, or the extension is removed.
+        </p>
+        <p>
+          Walle may read cookies only for supported work systems where session status or authorized system requests are required. Walle does not use cookies for cross-site advertising, behavioral advertising, or consumer tracking.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">07</span>
+        <h2>Transmission, retention, and security</h2>
+        <ul>
+          <li><strong>Transmission:</strong> Data sent to company-controlled services, CRM systems, supported recruiting systems, or workflow tools is transmitted through HTTPS or the security mechanism provided by the relevant service.</li>
+          <li><strong>Storage:</strong> Server-side records are stored in company-controlled systems or service providers used to operate the extension and related recruiting workflows.</li>
+          <li><strong>Retention:</strong> Server-side operational data is retained only as long as necessary for the relevant workflow, audit, security, or support purpose, and in any case no longer than 365 days unless a shorter period is required by policy or a longer period is required by law or legitimate business records.</li>
+          <li><strong>Security:</strong> We use access controls, transport encryption, operational logging, and data minimization measures. Contact data may be masked, hashed, or omitted from caches and logs where feasible.</li>
+        </ul>
+      </section>
+
+      <section>
+        <span class="num">08</span>
+        <h2>Sharing and service providers</h2>
+        <p>
+          Walle may share data only as needed to provide the internal features described in this policy. Recipients may include company-controlled backend services, CRM or recruiting systems used by the company, cloud hosting providers, and workflow-notification tools such as company-managed webhook integrations.
+        </p>
+        <p>
+          We do not sell, rent, or trade processed data. Service providers may process data only to provide the relevant service and are expected to protect it through contractual, technical, or organizational controls. Data may also be disclosed where required by applicable law, regulation, court order, or competent authority.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">09</span>
+        <h2>Compliance safeguards</h2>
+        <ul>
+          <li><strong>Purpose limitation:</strong> Walle is limited to authorized internal recruiting and CRM productivity workflows.</li>
+          <li><strong>Data minimization:</strong> Walle should process only the fields needed for the active feature and avoid excessive collection.</li>
+          <li><strong>User control:</strong> Most workflows run only when an authorized user opens a supported page or starts a specific action.</li>
+          <li><strong>No circumvention:</strong> Walle should not be used to bypass technical restrictions, obtain data by deception, or access data outside the user's authorization.</li>
+          <li><strong>Review and removal:</strong> We will review requests to restrict, correct, delete, or stop processing data where the request is legally or operationally valid.</li>
+        </ul>
+      </section>
+
+      <section>
+        <span class="num">10</span>
+        <h2>User choices and requests</h2>
+        <p>
+          Users may stop using Walle, disable the extension, uninstall it, or clear local browser storage. Authorized users, candidates, employers, or platform operators may contact us to request review, correction, deletion, restriction, or explanation of data processing where applicable.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">11</span>
+        <h2>Changes to this policy</h2>
+        <p>
+          We may update this policy when Walle's features, supported sites, data practices, or legal requirements change. For material updates, we will update the effective date above and may notify users through the extension or internal company channels.
+        </p>
+      </section>
+
+      <section>
+        <span class="num">12</span>
+        <h2>Contact</h2>
+        <p>If you have questions, requests, or site-owner concerns about this policy or Walle's data handling, contact:</p>
+        <div class="contact-box">
+          <div class="who">Walle</div>
+          <div><a href="mailto:wallego71@gmail.com">wallego71@gmail.com</a></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Public HTTPS page. No login required.<br>
+    Version: June 29, 2026
+  </footer>
+</div>
+</body>
+</html>
