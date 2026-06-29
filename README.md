@@ -1,0 +1,2 @@
+# privacy
+Walle privacy policy
